@@ -1,0 +1,17 @@
+.hello1 {
+    display: flex;
+    align-items: center; 
+    justify-content: flex-end;
+}
+
+.hello1 img {
+    border-radius: 50px;
+    margin-right: 50px; 
+    height: 400px;
+    width: 600px;
+}
+
+.hello1 h3 {
+    margin: 0; 
+    margin-right: 1%;
+}

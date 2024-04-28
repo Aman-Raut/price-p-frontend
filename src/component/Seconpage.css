@@ -1,0 +1,16 @@
+.hello {
+    display: flex;
+    align-items: center; /* Centers items vertically */
+}
+
+.hello img {
+    border-radius: 50px;
+    margin-right: 20px; 
+    margin-left: 50px;
+    height: 400px;
+    width: 600px;
+}
+
+.hello h3 {
+    margin: 0; 
+}
