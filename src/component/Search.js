@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Search.css'
-import Image from './image/flats.jpg'
+import Image from './image/bg.jpg'
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 function Search()
@@ -28,7 +28,7 @@ function Search()
       console.log(response.data);
       if(response)
       {
-        navigate("/list")
+        navigate("/list",{ responseData: response?.data })
       }
 
     } catch (error) {
@@ -57,7 +57,7 @@ function Search()
                     <option value="Deep Nagar">Deep Nagar</option>
                     </select>
                 </label> <br />
-                    <button onClick={handleSubmit}>SUBMIT</button>
+                    <button onClick={handleSubmit}>Submit</button>
             </div>
         </section>
         </>

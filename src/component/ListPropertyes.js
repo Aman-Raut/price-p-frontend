@@ -6,9 +6,6 @@ import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions } from '@mui/material';
 
 export default function ListPropertyes() {
-    
-
-
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardActionArea>
