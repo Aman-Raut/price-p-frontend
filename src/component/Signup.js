@@ -37,7 +37,7 @@ export default function SignUp() {
       event.preventDefault();
       try {
         // cpnsole.log("luyfcviuytfc")
-        const response = await axios.post('http://localhost:8080/auth/register', formData);
+        const response = await axios.post('https://priceprediction-api.vercel.app/auth/register', formData);
         // console.log(response,"luyf")
         if(response.data.message === "User registered")
         {

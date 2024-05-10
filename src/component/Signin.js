@@ -33,13 +33,13 @@ export default function SignIn() {
     event.preventDefault();
     
     try {
-      const response = await Axios.post('http://localhost:8080/auth/login', {
+      const response = await Axios.post('https://priceprediction-api.vercel.app/auth/login', {
         email,
         password,
       });
     //   console.log(response,"uygbjuygbjhg")
 
-      if (response.data.message === "Login sucessfull") {
+      if (response.data.message === "Login successful") {
         // Handle successful login
         const { token, userID } = response.data;
         localStorage.setItem('token', token);

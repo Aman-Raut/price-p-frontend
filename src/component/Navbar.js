@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom"; // Import useHistory to navigate
-import "./Navbar.css";
 
 function Navbar() {
   const [email, setEmail] = useState("");
@@ -30,7 +29,7 @@ function Navbar() {
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
-            Cheap & Better Home
+            Student Accomodation
           </a>
           <button
             className="navbar-toggler"
@@ -57,8 +56,11 @@ function Navbar() {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="/list">
+                  {/* <a className="nav-link" href="/list">
                     List of Properties
+                  </a> */}
+                  <a className="nav-link" href="/hostel-list">
+                   Hostel
                   </a>
                 </li>
                 <li className="nav-item">

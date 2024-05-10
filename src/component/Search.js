@@ -19,16 +19,19 @@ function Search()
   };
 
   const handleSubmit = async () => {
+    // console.log(budget,location,"hoihjojhj")
     if (!budget) {
         alert('Please enter a budget.');
         return;
       }
     try {
-      const response = await axios.get(`http://localhost:8080/rooms?price=${budget}&location=${location}`);
+      // const response = await axios.get(`http://localhost:8080/rooms/room?price=${budget}&location=${location}`);
+      const response = await axios.get(`https://priceprediction-api.vercel.app/rooms/room?price=${budget}&location=${location}`);
       console.log(response.data);
       if(response)
       {
-        navigate("/list",{ responseData: response?.data })
+        navigate("/list",{ state: { responseData: response.data } })
+
       }
 
     } catch (error) {

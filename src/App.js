@@ -6,6 +6,7 @@ import Navbar from './component/Navbar.js';
 import SignUp from './component/Signup.js';
 import Signin from './component/Signin.js';
 import ListPropertyes from './component/ListPropertyes.js';
+import Hostel from './component/Hostel.js';
 function App() {
 
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path = '/signup' element = {<SignUp/>}/>
         <Route path = '/signin' element = {<Signin/>}/>
         <Route path = '/list' element = {<ListPropertyes />}/>
+        <Route path = '/hostel-list' element = {<Hostel />}/>
     
       </Routes>
       </BrowserRouter>
