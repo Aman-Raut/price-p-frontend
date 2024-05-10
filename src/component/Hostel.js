@@ -10,7 +10,7 @@ import seater1 from "../component/image/1_seater.jpg"
 import seater2 from "../component/image/2_seater.jpg"
 import seater3 from "../component/image/3_seater.jpg"
 import seater4 from "../component/image/4_seater.jpg"
-
+import dom from "../component/image/dom.png"
 
 export default function Hostel() {
   const responseData = [
@@ -23,7 +23,7 @@ export default function Hostel() {
     { name: '3nd seater', price: '80,000 pa', image: seater3  },
     { name: '4nd seater AC', price: '75,000 pa', image: seater4 },
     { name: '4nd seater', price: '65,000 pa', image: seater4 },
-    { name: 'dormitory', price: '50,000 pa', image: seater1 },
+    { name: 'dormitory', price: '50,000 pa', image: dom },
     // Add more data as needed
   ];
 
